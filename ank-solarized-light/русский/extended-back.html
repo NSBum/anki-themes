@@ -1,0 +1,32 @@
+<!-- "Extended" - back of note type Русский -->
+
+<p class="serif deemphasized">{{FrontSide}}</p>
+
+<hr id=answer>
+
+<div id="answer" class="english cyan">{{Back}}</div>
+
+
+<br />
+<br />
+
+{{#sentence_ru}}
+<div class="example">
+
+</div>
+<span class="rusentence base01">{{sentence_ru}}</span> -   <span id="en" class="en base00">{{sentence_en}}</span>
+
+
+<br />
+<br />
+{{/sentence_ru}}
+
+<div class="notes base0">{{Notes}}</div>
+<a class="link blue" href="{{URL}}">link</a>
+<script>
+var content = document.getElementById("ru").innerHTML;
+if (content.length < 4) {
+	document.getElementById("ru").innerHTML = "";
+}
+
+</script>
