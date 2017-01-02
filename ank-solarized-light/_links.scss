@@ -1,0 +1,74 @@
+a {
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+    color: #265C83;
+}
+a:link,
+a:visited {
+    color: #265C83;
+}
+a:hover {
+    color: #7FDBFF;
+}
+a:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+    color: #007BE6;
+}
+.link {
+    text-decoration: none;
+}
+//
+//  Word info link when it's the question
+//
+a.wordInfo {
+    color: $questionColor;
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+    text-decoration: none;
+    opacity: 1.0;
+}
+a.wordInfo:hover {
+    color: lighten($questionColor, 20%);
+    text-decoration: underline;
+}
+a.wordInfo:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+//
+//  word information link when it's the answer
+//
+a.wordInfoAnswer {
+    color: $answerColor;
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+    text-decoration: none;
+    opacity: 1.0;
+}
+a.wordInfoAnswer:hover {
+    color: darken($answerColor, 20%);
+    text-decoration: underline;
+}
+a.wordInfoAnswer:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
