@@ -1,32 +1,31 @@
 <!-- "Extended" - back of note type Русский -->
 
-<p class="serif deemphasized">{{FrontSide}}</p>
+<p class="serif">
+    <!-- If a URL is available, use it -->
+    {{#URL}}
+        <a class="wordInfo" href="{{URL}}">
+            {{FrontSide}}
+        </a>
+    {{/URL}}
 
-<hr id=answer>
+    <!-- No URL available so just show text-->
+    {{^URL}}
+        {{FrontSide}}
+    {{/URL}}
+</p>
 
-<div id="answer" class="english cyan">{{Back}}</div>
+<hr/>
 
+<!-- Show the answer -->
+<div class="english answer">{{Back}}</div>
 
-<br />
-<br />
+<br /><br />
 
+<!-- if an example sentence is available, show it -->
 {{#sentence_ru}}
-<div class="example">
-
-</div>
-<span class="rusentence base01">{{sentence_ru}}</span> -   <span id="en" class="en base00">{{sentence_en}}</span>
-
-
-<br />
-<br />
+    <span class="rusentence">{{sentence_ru}} - </span>   <span id="en" class="ensentence">{{sentence_en}}</span>
+    <br /><br />
 {{/sentence_ru}}
 
-<div class="notes base0">{{Notes}}</div>
-<a class="link blue" href="{{URL}}">link</a>
-<script>
-var content = document.getElementById("ru").innerHTML;
-if (content.length < 4) {
-	document.getElementById("ru").innerHTML = "";
-}
-
-</script>
+<br />
+{{Notes}}
