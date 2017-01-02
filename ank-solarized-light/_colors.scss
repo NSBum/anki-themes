@@ -1,0 +1,43 @@
+//
+// === COLOURS ===
+//
+
+//
+// - Basic fonts
+//
+$cyan:              #2aa198;
+$orange:            #cb4b16;
+$blue:              #268bd2;
+$base0:             #839496;
+$base00:            #657b83;
+$base01:            #586e75;
+$base03:            #002b36;
+$base02:            #073642;    //  darkest
+
+$deemphasized:      $base00;
+
+//
+//  - Table colors
+//
+$dthBackColor:      #EEE;
+$dthBorderColor:    #F5DEB3;
+$drcBackground:     #FFEFD5;    //  table cell Russian contents
+
+//
+//  - Card background colors
+//
+$backgroundColor:   #feffe8;
+$gradientStart:     #fdf6e3;
+$gradientEnd:       #eee8d5;
+
+//
+//  - Question and answer colors
+//
+$questionColor:     $orange;
+$answerColor:       $cyan;
+
+//
+//  - Sentence colours
+//
+$ruSentenceColor:   $base02;
+$enSentenceColor:   $base0;
