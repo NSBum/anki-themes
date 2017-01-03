@@ -1,0 +1,20 @@
+{{FrontSide}}
+
+<hr id=answer>
+
+<!-- the image -->
+{{Front}}
+
+<br /><br />
+
+<!-- if there's a russian sentence, show the example pair -->
+{{#sentence_ru}}
+    <span class="rusentence">{{sentence_ru}} - </span>   <span id="en" class="ensentence">{{sentence_en}}</span>
+    <br /><br />
+{{/sentence_ru}}
+
+<!-- show notes if there are any -->
+{{#Notes}}
+    <h1 class="one"><span>NOTES</span></h1>
+    {{Notes}}
+{{/Notes}}

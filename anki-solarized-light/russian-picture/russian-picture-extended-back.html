@@ -1,0 +1,29 @@
+<!-- first, just show the image -->
+{{FrontSide}}
+
+<hr id=answer>
+
+<!-- the russian word -->
+<p class="serif">
+    {{#URL}}
+        <a class="wordInfo" href="{{URL}}">
+            {{Back}}
+        </a>
+    {{/URL}}
+
+    <!-- No URL available, so just show text -->
+    {{^URL}}
+        {{Back}}
+    {{/URL}}
+</p>
+
+<!-- if an example sentence is available, show it -->
+{{#sentence_ru}}
+    <span class="rusentence">{{sentence_ru}} - </span>   <span id="en" class="ensentence">{{sentence_en}}</span>
+    <br /><br />
+{{/sentence_ru}}
+
+{{#Notes}}
+    <h1 class="one"><span>NOTES</span></h1>
+    {{Notes}}
+{{/Notes}}

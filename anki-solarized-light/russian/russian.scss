@@ -1,0 +1,66 @@
+@import "../colors";
+@import "../fonts";
+@import "../animations";
+@import "../tables";
+@import "../links";
+@import "../questionanswer";
+@import "../examples";
+@import "../hrules";
+
+/*
+* === DEFAULT CARD FORMATTING ===
+*/
+.card {
+    font-family: $defaultCardFont;
+    font-size: $baseFontSize;
+    text-align: center;
+    color: $base02;
+    background: $backgroundColor;
+    /* Old browsers */
+
+    //background: -moz-linear-gradient(top, $gradientStart 0%, $gradientEnd 100%);
+    /* FF3.6-15 		*/
+
+    //background: -webkit-linear-gradient(top, $gradientStart 0%, $gradientEnd 100%);
+    /* 				Chrome10-25,Safari5.1-6 */
+
+    //background-repeat: no-repeat;
+    //background-attachment: fixed
+}
+
+div.notes {
+    font-size: 12px;
+    float: left;
+}
+.rusentence {
+    font-family: 'PT Serif';
+    font-size: $baseFontSize - 2;
+    font-weight: bold;
+    font-style: italic;
+}
+@media screen and (min-width: 480px) {
+    .serif {
+        font-family: $serifStack;
+        font-size: $baseFontSize + 8;
+        font-weight: bold;
+        //color: $deemphasized;
+    }
+    .english {
+        font-size: $baseFontSize + 4;
+        font-weight: bold;
+        //color: $orange;
+    }
+}
+@media screen and (max-width: 480px) {
+    .serif {
+        font-family: $serifStack;
+        font-size: $baseFontSize + 4;
+        font-weight: bold;
+        //color: $deemphasized;
+    }
+    .english {
+        font-size: $baseFontSize;
+        font-weight: bold;
+        //color: $orange;
+    }
+}

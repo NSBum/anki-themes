@@ -1,0 +1,239 @@
+.pulsate {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5; }
+
+.quick {
+  -webkit-animation: pulsate 2s ease-in;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.95; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    opacity: 0.2; } }
+@-webkit-keyframes quick {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.9; } }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    opacity: 0.21; }
+  50% {
+    -webkit-transform: scale(1.05, 1.05);
+    opacity: 1.0; }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1.0; } }
+.pulse {
+  -webkit-animation: pulse 1s ease-out;
+  -webkit-animation-iteration-count: 1; }
+
+.divTable {
+  display: table;
+  /*width: 100%;*/ }
+
+.divTableRow {
+  display: table-row; }
+
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group; }
+
+.divTableCell,
+.divTableHead {
+  border: 1px solid #F5DEB3;
+  display: table-cell;
+  padding: 3px 10px; }
+
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold; }
+
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold; }
+
+.divTableBody {
+  display: table-row-group; }
+
+.divHeader {
+  background-color: orange; }
+
+.divPerson {
+  background-color: sandybrown; }
+
+.divVerticalHeader {
+  background-color: sandybrown;
+  font-family: "Futura", arial, "PT Sans";
+  font-weight: bold;
+  font-size: 16px; }
+
+.divRussianCell {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  background-color: #FFEFD5; }
+
+a {
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -ms-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+  color: #265C83; }
+
+a:link,
+a:visited {
+  color: #265C83; }
+
+a:hover {
+  color: #7FDBFF; }
+
+a:active {
+  -webkit-transition: color .3s linear;
+  -moz-transition: color .3s linear;
+  -ms-transition: color .3s linear;
+  -o-transition: color .3s linear;
+  transition: color .3s linear;
+  color: #007BE6; }
+
+.link {
+  text-decoration: none; }
+
+a.wordInfo {
+  color: #cb4b16;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -ms-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+  text-decoration: none;
+  opacity: 1.0; }
+
+a.wordInfo:hover {
+  color: #ed855a;
+  text-decoration: underline; }
+
+a.wordInfo:active {
+  -webkit-transition: color .3s linear;
+  -moz-transition: color .3s linear;
+  -ms-transition: color .3s linear;
+  -o-transition: color .3s linear;
+  transition: color .3s linear; }
+
+a.wordInfoAnswer {
+  color: #2aa198;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -ms-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+  text-decoration: none;
+  opacity: 1.0; }
+
+a.wordInfoAnswer:hover {
+  color: #15504c;
+  text-decoration: underline; }
+
+a.wordInfoAnswer:active {
+  -webkit-transition: color .3s linear;
+  -moz-transition: color .3s linear;
+  -ms-transition: color .3s linear;
+  -o-transition: color .3s linear;
+  transition: color .3s linear; }
+
+.question {
+  color: #cb4b16; }
+
+.answer {
+  color: #2aa198; }
+
+.rusentence {
+  font-family: 'PT Serif';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #073642; }
+
+.ensentence {
+  font-family: "PT Sans", arial, futura;
+  font-size: 18px;
+  font-style: italic;
+  color: #839496; }
+
+h1 {
+  position: relative;
+  margin-top: 20px;
+  color: #839496; }
+
+h1.one {
+  margin-top: 0;
+  font-size: 18px; }
+
+h1.one:before {
+  content: "";
+  display: block;
+  border-top: solid 1px black;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1; }
+
+h1.one span {
+  color: #586e75;
+  background: #eee8d5;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5; }
+
+/*
+* === DEFAULT CARD FORMATTING ===
+*/
+.card {
+  font-family: "Futura", arial, "PT Sans";
+  font-size: 20px;
+  text-align: center;
+  color: #073642;
+  background: #eee8d5;
+  /* Old browsers */
+  /* FF3.6-15 		*/
+  /* 				Chrome10-25,Safari5.1-6 */ }
+
+div.notes {
+  font-size: 12px;
+  float: left; }
+
+.rusentence {
+  font-family: 'PT Serif';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic; }
+
+@media screen and (min-width: 480px) {
+  .serif {
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: bold; }
+
+  .english {
+    font-size: 24px;
+    font-weight: bold; } }
+@media screen and (max-width: 480px) {
+  .serif {
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold; }
+
+  .english {
+    font-size: 20px;
+    font-weight: bold; } }
+
+/*# sourceMappingURL=russian-picture.css.map */
