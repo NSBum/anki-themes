@@ -1,0 +1,65 @@
+@import "../colors";
+@import "../fonts";
+@import "../animations";
+@import "../tables";
+@import "../links";
+@import "../questionanswer";
+@import "../examples";
+@import "../hrules";
+@import "../headings";
+
+/*
+* === DEFAULT CARD FORMATTING ===
+*/
+.card {
+   font-family: $defaultCardFont;
+   font-size: $baseFontSize;
+   text-align: center;
+   color: $base02;
+   background: $backgroundColor; /* Old browsers */
+   //background: -moz-linear-gradient(top, #fdf6e3 0%, #eee8d5 100%); /* FF3.6-15 		*/
+   //background: -webkit-linear-gradient(top, #fdf6e3 0%,#eee8d5 100%); /* 				Chrome10-25,Safari5.1-6 */
+   //background-repeat: no-repeat;
+   //background-attachment: fixed
+}
+
+.cloze {
+   font-weight: bold;
+   color: $clozeColor;
+   @if $wantsClozeAnimations == true {
+       -webkit-animation: pulsate 3s ease-out;
+       -webkit-animation-iteration-count: infinite;
+       opacity: 0.5;
+   }
+}
+
+.russian {
+    font-family: $serifStack;
+    font-size: $baseFontSize + 2;
+}
+
+.english {
+    font-family: $sansStack;
+    color: $base01;
+}
+
+@-webkit-keyframes pulsate {
+   0% {opacity: 0.7;}
+   50% {opacity: 1.0;}
+   100% {opacity: 0.7;}
+}
+
+li { text-align: left; font-family: $sansStack; font-size: $baseFontSize - 4; }
+
+code { font-family: Georgia; }
+.extras {
+   font-family: $sansStack;
+   font-size: $baseFontSize - $clozeDecrement;
+   color: #839496;
+}
+// .divPerson {
+//    color: #555;
+// }
+// .divHeader {
+//    color: #444
+// }
