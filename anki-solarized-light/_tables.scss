@@ -33,26 +33,102 @@
 .divTableBody {
     display: table-row-group;
 }
-.divHeader {
-    background-color: orange;
-}
+
 
 //
 // — Specific to Anki grammar tables —
 //
-
 //  divPerson should be deprecated
 .divPerson {
     background-color: sandybrown;
+    font-family: $sansStack;
+    color: $base02;
+    font-size: $baseFontSize - 4;
+}
+.divHeader {
+    background-color: orange;
+    font-family: $sansStack;
+    font-size: $baseFontSize - 4;
 }
 .divVerticalHeader {
     background-color: sandybrown;
+    color: $base02;
     font-family: $sansStack;
-    font-weight: bold;
     font-size: $baseFontSize - 4;
 }
 .divRussianCell {
-    font-family: Georgia, serif;
-    font-size: $baseFontSize - 2;
+    font-family: $serifStack;
+    font-size: $baseFontSize - 4;
     background-color: $drcBackground;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.tg td {
+    font-family: $sansStack;
+    font-size: $baseFontSize - 6;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $dthBorderColor;
+    overflow: hidden;
+    word-break: normal;
+}
+.tg th {
+    font-family: $sansStack;
+    font-size: $baseFontSize - 6;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $dthBorderColor;
+    overflow: hidden;
+    word-break: normal;
+}
+.tg .tdRussian {
+    font-size: $baseFontSize - 2;
+    font-family: $serifStack;
+    background-color: $drcBackground;
+    vertical-align: top
+}
+.tg .thHeader {
+    background-color: $tableHeaderBackgroundColor;
+    font-family: $sansStack;
+    font-size: $baseFontSize - 4;
+}
+.tg .tdVerticalHeader {
+    background-color: $tableVerticalHeaderBackgroundColor;
+    color: $base02;
+    font-family: $sansStack;
+    font-size: $baseFontSize - 4;
+}
+
+//  on mobile devices or small window sizes
+//  compress the text a bit
+@media screen and (max-width: 480px) {
+    //  divPerson should be deprecated
+    .divPerson {
+        font-size: $baseFontSize - 8;
+    }
+    .divHeader {
+        font-size: $baseFontSize - 8;
+    }
+    .divVerticalHeader {
+        font-size: $baseFontSize - 8;
+    }
+    .divRussianCell {
+        font-family: $sansStack;
+        font-size: $baseFontSize - 8;
+    }
+    .tg .tdVerticalHeader {
+        font-size: $baseFontSize - 8;
+    }
+    .tg .thHeader {
+        font-size: $baseFontSize - 8;
+    }
+    .tg .tdRussian {
+        font-size: $baseFontSize - 4;
+    }
 }
