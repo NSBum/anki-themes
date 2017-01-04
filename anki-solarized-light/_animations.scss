@@ -1,6 +1,9 @@
 //
 // === ANIMATIONS ===
 //
+
+$wantsClozeAnimations: false !default;
+
 .pulsate {
     -webkit-animation: pulsate 3s ease-out;
     -webkit-animation-iteration-count: infinite;
