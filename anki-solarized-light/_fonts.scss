@@ -3,6 +3,7 @@
 //
 
 $baseFontSize:      20px;
-$serifStack:        'PT Serif',Georgia,'Times New Roman', serif;
+$serifStack:        Georgia,'PT Serif','Times New Roman', serif;
 $sansStack:         'Futura', arial, 'PT Sans';
 $defaultCardFont:   $sansStack;
+$clozeDecrement:    -2;
