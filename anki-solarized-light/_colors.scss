@@ -9,6 +9,7 @@ $cyan:              #2aa198;
 $orange:            #cb4b16;
 $blue:              #268bd2;
 $base0:             #839496;
+$base1:             #93a1a1;
 $base00:            #657b83;
 $base01:            #586e75;
 $base03:            #002b36;
@@ -17,6 +18,7 @@ $base2:             #eee8d5;    //  background color darker
 $base3:             #fdf6e3;    //  background color lighter
 
 $deemphasized:      $base00;
+$clozeColor:        #b58900;
 
 //
 //  - Table colors
@@ -24,6 +26,8 @@ $deemphasized:      $base00;
 $dthBackColor:      #EEE;
 $dthBorderColor:    #F5DEB3;
 $drcBackground:     #FFEFD5;    //  table cell Russian contents
+$tableHeaderBackgroundColor:            orange;
+$tableVerticalHeaderBackgroundColor:    sandybrown;
 
 //
 //  - Card background colors
