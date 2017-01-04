@@ -6,13 +6,13 @@ h1 {
 
   h1.one {
     margin-top: 0;
-    font-size: $baseFontSize - 2;
+    font-size: $baseFontSize - 6;
   }
 
   h1.one:before {
     content: "";
     display: block;
-    border-top: solid 1px black;
+    border-top: solid 1px $base1;
     width: 100%;
     height: 1px;
     position: absolute;
@@ -21,9 +21,13 @@ h1 {
   }
 
   h1.one span {
-    color: $base01;
+    color: $base1;
     background: $backgroundColor;
     padding: 0 20px;
     position: relative;
     z-index: 5;
+  }
+
+  hr.style4 {
+     border-top: 1px dotted #93a1a1;
   }
