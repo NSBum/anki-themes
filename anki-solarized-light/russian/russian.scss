@@ -38,29 +38,22 @@ div.notes {
     font-weight: bold;
     font-style: italic;
 }
-@media screen and (min-width: 480px) {
-    .serif {
-        font-family: $serifStack;
-        font-size: $baseFontSize + 8;
-        font-weight: bold;
-        //color: $deemphasized;
-    }
-    .english {
-        font-size: $baseFontSize + 4;
-        font-weight: bold;
-        //color: $orange;
-    }
+
+.serif {
+    font-family: $serifStack;
+    font-size: $baseFontSize + 8;
+    font-weight: bold;
 }
+.english {
+    font-size: $baseFontSize + 4;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 480px) {
     .serif {
-        font-family: $serifStack;
         font-size: $baseFontSize + 4;
-        font-weight: bold;
-        //color: $deemphasized;
     }
     .english {
         font-size: $baseFontSize;
-        font-weight: bold;
-        //color: $orange;
     }
 }
