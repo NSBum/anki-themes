@@ -6,3 +6,13 @@
 .answer {
     color: $answerColor;
 }
+
+.serif {
+    font-family: $serifStack;
+    font-size: $baseFontSize + 8;
+    font-weight: bold;
+}
+.english {
+    font-size: $baseFontSize + 4;
+    font-weight: bold;
+}
