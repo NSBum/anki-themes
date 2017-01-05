@@ -2,8 +2,21 @@
 // === FONTS ===
 //
 
-$baseFontSize:      20px;
-$serifStack:        Georgia,'PT Serif','Times New Roman', serif;
-$sansStack:         'Futura', arial, 'PT Sans';
-$defaultCardFont:   $sansStack;
-$clozeDecrement:    -2;
+$baseFontSize:          20px;
+$serifStack:            Georgia,'PT Serif','Times New Roman', serif;
+$sansStack:             'Futura', arial, 'PT Sans';
+$russianSentenceFont:   'PT Serif', 'Times New Roman';
+$defaultCardFont:       $sansStack;
+$clozeDecrement:        -2;
+
+.small {
+    font-size: $baseFontSize - 2;
+}
+
+.smaller {
+    font-size: $baseFontSize - 4;
+}
+
+.smallest {
+    font-size: $baseFontSize - 6;
+}
