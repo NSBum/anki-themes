@@ -1,8 +1,8 @@
-{{FrontSide}}
+<span class="question english">{{Back}}</span>
 
 <hr id=answer>
 
-<p class="serif">
+<p class="serif answer">
     <!-- if there's a URL available, apply it -->
     {{#URL}}
         <a class="wordInfoAnswer" href="{{URL}}">
@@ -14,6 +14,11 @@
         {{Front}}
     {{/URL}}
 </p>
+
+<!-- Pronounce the word if available -->
+{{#Pronunciation}}
+	<div>{{Pronunciation}}</div>
+{{/Pronunciation}}
 
 <!-- if there's a russian sentence, show the example pair -->
 {{#sentence_ru}}
