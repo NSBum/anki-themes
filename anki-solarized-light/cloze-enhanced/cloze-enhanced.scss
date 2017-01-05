@@ -16,11 +16,7 @@
    font-size: $baseFontSize;
    text-align: center;
    color: $base02;
-   background: $backgroundColor; /* Old browsers */
-   //background: -moz-linear-gradient(top, #fdf6e3 0%, #eee8d5 100%); /* FF3.6-15 		*/
-   //background: -webkit-linear-gradient(top, #fdf6e3 0%,#eee8d5 100%); /* 				Chrome10-25,Safari5.1-6 */
-   //background-repeat: no-repeat;
-   //background-attachment: fixed
+   background: $backgroundColor;
 }
 
 .cloze {
@@ -35,12 +31,23 @@
 
 .russian {
     font-family: $serifStack;
-    font-size: $baseFontSize + 2;
+    font-size: $baseFontSize + 4;
+}
+
+//  small screen support
+@media screen and (max-width: 480px) {
+    .russian {
+        font-size: $baseFontSize + 2;
+    }
+    .english {
+        font-size: $baseFontSize - 2;
+    }
 }
 
 .english {
     font-family: $sansStack;
     color: $base01;
+    font-size: $baseFontSize;
 }
 
 @-webkit-keyframes pulsate {
