@@ -39,16 +39,6 @@ div.notes {
     font-style: italic;
 }
 
-.serif {
-    font-family: $serifStack;
-    font-size: $baseFontSize + 8;
-    font-weight: bold;
-}
-.english {
-    font-size: $baseFontSize + 4;
-    font-weight: bold;
-}
-
 @media screen and (max-width: 480px) {
     .serif {
         font-size: $baseFontSize + 4;
