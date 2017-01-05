@@ -1,0 +1,40 @@
+<span class="question english">{{Back}}</span>
+
+<hr id=answer>
+
+<!-- if there's an imperfective form, show it -->
+{{#front_imperfective}}
+    <span class="serif answer">{{front_imperfective}} </span><span class="aspect">ipf</span>
+{{/front_imperfective}}
+<!-- and show perfective form if any -->
+{{#front_perfective}}
+    <span class="serif cyan">{{front_perfective}} </span><span class="aspect">pf</span>
+{{/front_perfective}}
+
+<!-- play pronunciation(s) -->
+<span id="play_sounds">{{sounds}}</span>
+
+<br /><br />
+
+<div class="example_sentences">
+    <h1 class="one"><span>EXAMPLE(S)</span></h1>
+
+    <!-- show imperfective sentences if available -->
+    {{#sentence_ru_ipf}}
+        <h4>Imperfective</h4>
+        <span class="rusentence">{{sentence_ru_ipf}}</span> -   <span id="en" class="ensentence">{{sentence_en_ipf}}</span>
+        <br /><br />
+    {{/sentence_ru_ipf}}
+
+    <!-- show perfective sentences if available -->
+    {{#sentence_ru_pf}}
+        <h4>Perfective</h4>
+        <span class="rusentence">{{sentence_ru_pf}}</span> -   <span id="en" class="ensentence">{{sentence_en_pf}}</span>
+    {{/sentence_ru_pf}}
+</div>
+
+<!-- show notes if there are any -->
+{{#Notes}}
+    <h1 class="one"><span>NOTES</span></h1>
+    {{Notes}}
+{{/Notes}}

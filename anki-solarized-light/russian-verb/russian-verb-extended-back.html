@@ -1,0 +1,31 @@
+<p class="serif deemphasized">{{FrontSide}}</p>
+
+<hr id=answer>
+
+<p id="answer" class="answer">{{Back}}</p>
+
+<hr id="sentences">
+
+<!-- show imperfective sentences if available -->
+
+<div class="example_sentences">
+    {{#sentence_ru_ipf}}
+        <h4>Imperfective</h4>
+        <span class="rusentence">{{sentence_ru_ipf}}</span> -   <span id="en" class="ensentence">{{sentence_en_ipf}}</span>
+
+        {{/sentence_ru_ipf}}
+
+        <!-- show perfective sentences if available -->
+
+
+        {{#sentence_ru_pf}}
+            <br /><br />
+            <h4>Perfective</h4>
+            <span class="rusentence">{{sentence_ru_pf}}</span> -   <span id="en" class="ensentence">{{sentence_en_pf}}</span>
+        {{/sentence_ru_pf}}
+</div>
+
+<br /><br />
+
+<div class="notes base0">{{Notes}}</div>
+<a class="link blue" href="{{URL}}">link</a>

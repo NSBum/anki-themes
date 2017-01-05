@@ -1,0 +1,18 @@
+<!-- front template for Russian verbs -->
+{{#front_imperfective}}
+    <span class="question serif">{{front_imperfective}} </span><span class="aspect">ipf</span>
+{{/front_imperfective}}
+
+<!-- show perfective if available -->
+{{#front_perfective}}
+    <span class="question serif">{{front_perfective}} </span><span class="aspect">pf</span>
+{{/front_perfective}}
+
+<!-- notify the user if there's no aspect partner -->
+{{#has_no_ipf}}
+    <p class="en base0">No imperfective form</p>
+{{/has_no_ipf}}
+
+{{#has_no_pf}}
+    <p class="en base0">No perfective form</p>
+{{/has_no_pf}}

@@ -1,0 +1,65 @@
+@import "../colors";
+@import "../fonts";
+@import "../animations";
+@import "../tables";
+@import "../links";
+@import "../questionanswer";
+@import "../examples";
+@import "../hrules";
+@import "../headings";
+@import "../sentences";
+
+/*
+* === DEFAULT CARD FORMATTING ===
+*/
+.card {
+    font-family: $defaultCardFont;
+    font-size: $baseFontSize;
+    text-align: center;
+    color: $base02;
+    background: $backgroundColor;
+}
+
+.aspect {
+    font-family: $sansStack;
+    font-style: italic;
+    font-size: $baseFontSize - 2;
+    color: $base0;
+}
+
+.serif {
+    font-family: $serifStack;
+    font-size: $baseFontSize + 8;
+    font-weight: bold;
+}
+
+.messages {
+    font-family: $sansStack;
+    font-size:  $baseFontSize - 4;
+    color: $base00;
+}
+
+a.moreInfo {
+    color: $blue;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    font-size: $baseFontSize - 4;
+    opacity: 1.0;
+}
+a.moreInfo:hover {
+    color: lighten($blue, 20%);
+    border-color: lighten($blue, 20%);
+}
+a.moreInfo:active {
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
