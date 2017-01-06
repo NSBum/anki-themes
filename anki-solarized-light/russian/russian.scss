@@ -32,12 +32,6 @@ div.notes {
     font-size: 12px;
     float: left;
 }
-.rusentence {
-    font-family: 'PT Serif';
-    font-size: $baseFontSize - 2;
-    font-weight: bold;
-    font-style: italic;
-}
 
 @media screen and (max-width: 480px) {
     .serif {
