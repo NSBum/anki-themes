@@ -27,5 +27,12 @@
 
 <br /><br />
 
-<div class="notes base0">{{Notes}}</div>
-<a class="link blue" href="{{URL}}">link</a>
+<!-- show notes if there are any -->
+{{#Notes}}
+    <h1 class="one"><span>NOTES</span></h1>
+    <div class="notes">
+        {{Notes}}
+    </div>
+{{/Notes}}
+<br />
+<a class="moreInfo" href="{{URL}}">More info...</a>

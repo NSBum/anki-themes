@@ -3,16 +3,16 @@
 <hr id=answer>
 
 <!-- if there's an imperfective form, show it -->
-{{#front_imperfective}}
-    <span class="serif answer">{{front_imperfective}} </span><span class="aspect">ipf</span>
-{{/front_imperfective}}
+{{#Imperfective}}
+    <span class="serif answer">{{Imperfective}} </span><span class="aspect">ipf</span>
+{{/Imperfective}}
 <!-- and show perfective form if any -->
-{{#front_perfective}}
-    <span class="serif answer">{{front_perfective}} </span><span class="aspect">pf</span>
-{{/front_perfective}}
+{{#Perfective}}
+    <span class="serif answer">{{Perfective}} </span><span class="aspect">pf</span>
+{{/Perfective}}
 
 <!-- play pronunciation(s) -->
-<span id="play_sounds">{{sounds}}</span>
+<span id="play_sounds">{{Pronunciation}}</span>
 
 <br /><br />
 
@@ -34,8 +34,10 @@
 </div>
 
 <!-- show notes if there are any -->
+<br />
 {{#Notes}}
-	<br />
     <h1 class="one"><span>NOTES</span></h1>
-    {{Notes}}
+    <div class="notes">
+        {{Notes}}
+    </div>
 {{/Notes}}
