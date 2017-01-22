@@ -1,15 +1,15 @@
 
 
 .rusentence {
-    font-family: 'PT Serif';
-    font-size: $baseFontSize - 2;
+    font-family: $russianSentenceFont;
+    font-size: $baseFontSize;
     font-weight: bold;
     font-style: italic;
     color: $ruSentenceColor;
 }
 
 .ensentence {
-    font-family: "PT Sans", arial, futura;
+    font-family: $sansStack;
     font-size: $baseFontSize - 2;
     //font-weight: bold;
     font-style: italic;
