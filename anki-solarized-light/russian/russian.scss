@@ -6,6 +6,7 @@
 @import "../questionanswer";
 @import "../examples";
 @import "../hrules";
+@import "../notes";
 
 /*
 * === DEFAULT CARD FORMATTING ===
@@ -16,11 +17,6 @@
     text-align: center;
     color: $base02;
     background: $backgroundColor;
-}
-
-div.notes {
-    font-size: 12px;
-    float: left;
 }
 
 @media screen and (max-width: 480px) {
