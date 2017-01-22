@@ -19,6 +19,8 @@
     //transform: scaleY(0.5);
     display: table-cell;
     padding: 3px 10px;
+    font-family: $sansStack;
+    color: $base02;
 }
 .divTableHeading {
     background-color: $dthBackColor;
@@ -97,6 +99,7 @@
     background-color: $tableHeaderBackgroundColor;
     font-family: $sansStack;
     font-size: $baseFontSize - 4;
+    color: $base02;
 }
 .tg .tdVerticalHeader {
     background-color: $tableVerticalHeaderBackgroundColor;
