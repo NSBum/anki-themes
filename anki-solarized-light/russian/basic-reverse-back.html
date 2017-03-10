@@ -11,7 +11,9 @@
     {{/URL}}
     <!-- if there's no URL, just show the front without a link -->
     {{^URL}}
-        {{Front}}
+        <a class="wordInfo" href="https://en.openrussian.org/ru/{{Front}}">
+            {{Front}}
+        </a>
     {{/URL}}
 </p>
 
