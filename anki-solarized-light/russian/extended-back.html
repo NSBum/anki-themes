@@ -10,7 +10,9 @@
 
     <!-- No URL available so just show text-->
     {{^URL}}
-        {{FrontSide}}
+        <a class="wordInfo" href="https://en.openrussian.org/ru/{{Front}}">
+		{{FrontSide}}
+	</a>
     {{/URL}}
 </p>
 
@@ -18,6 +20,7 @@
 
 <!-- Show the answer -->
 <div class="english answer">{{Back}}</div>
+{{#Pronunciation}}<span class="green_button">{{Pronunciation}}</span>{{/Pronunciation}}
 
 <br /><br />
 
