@@ -1,3 +1,18 @@
 .orange_button .replaybutton span svg {
     fill: $orange;
 }
+
+.green_button .replaybutton span svg {
+    fill: $green;
+}
+
+//  default button
+.replaybutton span svg {
+  stroke: none;
+  fill: $green;
+  display: inline;
+  height: 1em;
+  width: 1em;
+  min-width: 12px;
+  min-height: 12px;
+}
