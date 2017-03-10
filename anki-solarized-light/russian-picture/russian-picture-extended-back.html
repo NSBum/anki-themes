@@ -11,10 +11,11 @@
         </a>
     {{/URL}}
 
-    <!-- No URL available, so just show text -->
+    <!-- No URL available, so derive it from the back text -->
     {{^URL}}
-        {{Back}}
+        <a class="wordInfo" href="https://en.openrussian.org/ru/{{Back}}">{{Back}}</a>
     {{/URL}}
+    <span class=".green_button">{{Pronunciation}}</p>
 </p>
 
 <!-- if an example sentence is available, show it -->
@@ -25,5 +26,7 @@
 
 {{#Notes}}
     <h1 class="one"><span>NOTES</span></h1>
-    {{Notes}}
+    <div class="notes">
+        {{Notes}}
+    </div>
 {{/Notes}}
