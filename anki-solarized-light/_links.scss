@@ -72,3 +72,16 @@ a.wordInfoAnswer:active {
     -o-transition: color .3s linear;
     transition: color .3s linear;
 }
+
+a.hint {
+	text-decoration: none !important;
+	font-size: $baseFontSize - 5;
+	text-transform: uppercase;
+}
+a.hint:visited,
+a.hint:link {
+	color:desaturate($orange,20%);
+}
+a.hint:hover {
+	color:darken(desaturate($orange,50%),20%);
+}
