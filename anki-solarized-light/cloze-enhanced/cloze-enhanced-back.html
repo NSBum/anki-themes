@@ -1,5 +1,14 @@
 <!-- russian sentence -->
-<p class="russian question">{{cloze:Русский}}{{#Pronunciation}}<span class="orange_button">{{Pronunciation}}</span>{{/Pronunciation}}</p>
+<p class="russian question">
+	<tts service="say" speed="160" voice="Yuri">
+		{{cloze:Русский}}
+	</tts>
+{{#Pronunciation}}
+	<span class="orange_button">
+		{{Pronunciation}}
+	</span>
+{{/Pronunciation}}
+</p>
 <hr />
 
 <!-- english translation of the russian sentence -->
