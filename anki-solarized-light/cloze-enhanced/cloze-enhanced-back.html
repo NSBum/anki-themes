@@ -1,8 +1,17 @@
+
 <!-- russian sentence -->
 <p class="russian question">
-	<tts service="say" speed="160" voice="Yuri">
+	<!-- if NoAudio field is empty (user wants audio) play it -->
+	{{^NoAudio}}
+		<tts service="say" speed="160" voice="Yuri">
+			{{cloze:Русский}}
+		</tts>
+	{{/NoAudio}}
+	<!-- if NoAudio field is populated, just show the answer -->
+ 	{{#NoAudio}}
 		{{cloze:Русский}}
-	</tts>
+	{{/NoAudio}}
+
 {{#Pronunciation}}
 	<span class="orange_button">
 		{{Pronunciation}}
