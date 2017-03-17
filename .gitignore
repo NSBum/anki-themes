@@ -21,3 +21,4 @@
 *.css
 *.scssc
 *.map
+.DS_Store
