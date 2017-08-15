@@ -11,3 +11,15 @@ li ul {
     color: $base0;
     text-align: left;
 }
+
+.serifcode {
+    font-family: $serifStack;
+    font-weight: 600;
+    color: lighten(desaturate($orange,20%),10%);
+}
+
+.myCodeClass {
+    font-family: $serifStack;
+    font-weight: 600;
+    color: lighten(desaturate($orange,20%),10%);
+}
