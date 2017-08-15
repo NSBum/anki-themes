@@ -2,7 +2,7 @@
 
 .rusentence {
     font-family: $russianSentenceFont;
-    font-size: $baseFontSize;
+    font-size: $baseFontSize - 2;
     font-weight: bold;
     //font-style: italic;
     color: $ruSentenceColor;
