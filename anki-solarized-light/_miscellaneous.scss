@@ -3,3 +3,9 @@
     font-family: $serifStack;
     font-size: $baseFontSize - 2;
 }
+
+.tags {
+    color: desaturate(lighten($blue, 10%),20%);
+    font-family: $sansStack;
+    font-size: $baseFontSize - 8;
+}
