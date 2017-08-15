@@ -11,3 +11,6 @@ sass russian-verb/russian-verb.scss russian-verb/russian-verb.css
 
 echo "Compiling cloze-enhanced.scss"
 sass cloze-enhanced/cloze-enhanced.scss cloze-enhanced/cloze-enhanced.css
+
+echo "Compiling russian-basic.scss"
+sass russian-basic/russian-basic.scss russian-basic/russian-basic.css
