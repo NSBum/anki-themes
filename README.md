@@ -5,3 +5,5 @@ These are SASS and card format HTML files that I use for my Russian language stu
 An example of the type of formatting that you can apply in Anki (light solarized theme):
 
 ![Russian verb card](http://i.imgur.com/o51ngTQ.png)
+
+If you're interested in how all this gets integrated into the cards in my deck, you can import the `.apkg` file into Anki. 
