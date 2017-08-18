@@ -1,0 +1,31 @@
+@import "../colors";
+@import "../fonts";
+@import "../animations";
+@import "../tables";
+@import "../links";
+@import "../questionanswer";
+@import "../examples";
+@import "../notes";
+@import "../hrules";
+@import "../headings";
+@import "../buttons";
+
+/*
+* === DEFAULT CARD FORMATTING ===
+*/
+.card {
+    font-family: $defaultCardFont;
+    font-size: $baseFontSize;
+    text-align: center;
+    color: $base02;
+    background: $backgroundColor;
+}
+
+@media screen and (max-width: 480px) {
+    .serif {
+        font-size: $baseFontSize + 4;
+    }
+    .english {
+        font-size: $baseFontSize;
+    }
+}

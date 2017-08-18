@@ -1,0 +1,24 @@
+<!-- "Extended" - back of note type Русский -->
+
+<p class="serif">
+    {{FrontSide}}
+</p>
+{{#Pronunciation}}
+	<span class="green_button">
+{{Pronunciation}}</span>{{/Pronunciation}}
+
+<hr/>
+
+<!-- Show the answer -->
+<div class="english answer">{{Back}}</div>
+
+
+<br /><br />
+
+<!-- show notes if there are any -->
+{{#Notes}}
+    <h1 class="one"><span>NOTES</span></h1>
+    <div class="notes">
+        {{Notes}}
+    </div>
+{{/Notes}}

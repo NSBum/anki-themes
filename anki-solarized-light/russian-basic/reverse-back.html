@@ -1,0 +1,20 @@
+<p class="serif answer">
+    {{FrontSide}}
+</p>
+
+<hr id=answer>
+
+<p class="serif answer">{{Front}}</p>
+
+<!-- Pronounce the word if available -->
+{{#Pronunciation}}
+	<div>{{Pronunciation}}</div>
+{{/Pronunciation}}
+
+<!-- show notes if there are any -->
+{{#Notes}}
+    <h1 class="one"><span>NOTES</span></h1>
+    <div class="notes">
+        {{Notes}}
+    </div>
+{{/Notes}}
