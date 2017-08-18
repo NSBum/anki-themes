@@ -22,7 +22,8 @@
 }
 
 .cloze {
-   font-weight: bold;
+   font-size: $baseFontSize;
+   font-weight: normal;
    color: $clozeColor;
    @if $wantsClozeAnimations == true {
        -webkit-animation: pulsate 3s ease-out;
